@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({50:[function(require,module,exports) {
+})({51:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -128,7 +128,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],44:[function(require,module,exports) {
+},{}],50:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -159,31 +159,31 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":50}],36:[function(require,module,exports) {
+},{"./bundle-url":51}],37:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":44}],37:[function(require,module,exports) {
+},{"_css_loader":50}],38:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":44}],35:[function(require,module,exports) {
+},{"_css_loader":50}],36:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":44}],40:[function(require,module,exports) {
+},{"_css_loader":50}],41:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\fonts\\fontawesome-webfont.eot":[["fontawesome-webfont.56aac81d.eot",45],45],"./..\\fonts\\fontawesome-webfont.woff2":[["fontawesome-webfont.75ac43a9.woff2",46],46],"./..\\fonts\\fontawesome-webfont.woff":[["fontawesome-webfont.ab92442b.woff",47],47],"./..\\fonts\\fontawesome-webfont.ttf":[["fontawesome-webfont.a779179a.ttf",48],48],"./..\\fonts\\fontawesome-webfont.svg":[["fontawesome-webfont.488860fd.svg",49],49],"_css_loader":44}],41:[function(require,module,exports) {
+},{"./..\\fonts\\fontawesome-webfont.eot":[["fontawesome-webfont.56aac81d.eot",45],45],"./..\\fonts\\fontawesome-webfont.woff2":[["fontawesome-webfont.75ac43a9.woff2",46],46],"./..\\fonts\\fontawesome-webfont.woff":[["fontawesome-webfont.ab92442b.woff",47],47],"./..\\fonts\\fontawesome-webfont.ttf":[["fontawesome-webfont.a779179a.ttf",48],48],"./..\\fonts\\fontawesome-webfont.svg":[["fontawesome-webfont.488860fd.svg",49],49],"_css_loader":50}],42:[function(require,module,exports) {
 var define;
 var global = arguments[3];
 /*! UIkit 3.0.0-rc.19 | http://www.getuikit.com | (c) 2014 - 2018 YOOtheme | MIT License */
@@ -12098,7 +12098,7 @@ var global = arguments[3];
 
 })));
 
-},{}],42:[function(require,module,exports) {
+},{}],43:[function(require,module,exports) {
 var define;
 var global = arguments[3];
 /*! UIkit 3.0.0-rc.19 | http://www.getuikit.com | (c) 2014 - 2018 YOOtheme | MIT License */
@@ -12261,7 +12261,7 @@ var global = arguments[3];
 
 })));
 
-},{}],38:[function(require,module,exports) {
+},{}],39:[function(require,module,exports) {
 /**
  * @license
  * Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
@@ -12296,7 +12296,7 @@ var global = arguments[3];
   HTMLElement.prototype.constructor = HTMLElement;
   Object.setPrototypeOf(HTMLElement, BuiltInHTMLElement);
 })();
-},{}],43:[function(require,module,exports) {
+},{}],44:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12474,7 +12474,7 @@ var TemplatePage = exports.TemplatePage = function () {
 
     return TemplatePage;
 }();
-},{}],39:[function(require,module,exports) {
+},{}],40:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12551,7 +12551,7 @@ var Router = exports.Router = function () {
 
     return Router;
 }();
-},{"../webjs_modules/app":43}],60:[function(require,module,exports) {
+},{"../webjs_modules/app":44}],63:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12847,7 +12847,7 @@ var UIButtonGroup = exports.UIButtonGroup = function (_reflex$Component2) {
 
     return UIButtonGroup;
 }(reflex.Component);
-},{"../../reflex.module":60}],55:[function(require,module,exports) {
+},{"../../reflex.module":63}],56:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12990,7 +12990,7 @@ var CardFooter = exports.CardFooter = function (_reflex$Component4) {
 
     return CardFooter;
 }(reflex.Component);
-},{"../../reflex.module":60}],56:[function(require,module,exports) {
+},{"../../reflex.module":63}],57:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13010,7 +13010,7 @@ function init() {
     customElements.define("ui-card-footer", components.CardFooter);
     customElements.define("ui-card-body", components.CardBody);
 }
-},{"./component":62}],63:[function(require,module,exports) {
+},{"./component":62}],64:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13082,7 +13082,7 @@ var GridItem = exports.GridItem = function (_reflex$Component2) {
 
     return GridItem;
 }(reflex.Component);
-},{"../../reflex.module":60}],57:[function(require,module,exports) {
+},{"../../reflex.module":63}],58:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13100,7 +13100,7 @@ function init() {
     customElements.define("ui-grid", components.Grid);
     customElements.define("ui-grid-item", components.GridItem);
 }
-},{"./component":63}],58:[function(require,module,exports) {
+},{"./component":64}],59:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13148,7 +13148,7 @@ var Margin = function (_reflex$Component) {
 function init() {
     customElements.define("ui-margin", Margin);
 }
-},{"../../reflex.module":60}],59:[function(require,module,exports) {
+},{"../../reflex.module":63}],60:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13214,11 +13214,11 @@ function init() {
     customElements.define("ui-slideshow", SlideShowContainer);
     customElements.define("ui-slidehow-item", SlideShowItem);
 }
-},{"../../reflex.module":60}],53:[function(require,module,exports) {
+},{"../../reflex.module":63}],54:[function(require,module,exports) {
 module.exports="/mypic.facfe071.jpg";
-},{}],54:[function(require,module,exports) {
+},{}],55:[function(require,module,exports) {
 module.exports="/webjs.a3b64ad2.png";
-},{}],51:[function(require,module,exports) {
+},{}],52:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -13267,7 +13267,7 @@ var Home = exports.Home = function () {
     function Home(root) {
         _classCallCheck(this, Home);
 
-        root.innerHTML = "\n        <div class=\"uk-tile main-2\" style=\"text-align:center;\">\n            <img src=\"" + _mypic2.default + "\" class=\"uk-border-circle\" style=\"width:100px;height:100px\"></img>\n            <h3 class=\"uk-text-large\">Hi There, My Name Is Tsowa Mainasara Al-amin</h3>\n            <p>I am a cyber security student with a passion for system and network applications.</p>\n            <p>I have made security software, both offensive and defensive. Also i have created other utility software</p>\n        </div>\n        <h4 class=\"uk-text-large\" style=\"text-align:center;\">Languages</h4>\n        <ui-slideshow>\n            <ui-slideshow-item>\n                <ui-card color=\"primary\" _class=\"primary\">\n                    <ui-card-header>\n                        <h1>Golang</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I have used golang to create security tools, back-end services and a new project coming soon\n                        is a new programming language of which it's compiler is made with golang\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"secondary\" @click=\"this.$methods.openGithubRepositories('go')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n            <ui-slideshow-item>\n                <ui-card color=\"secondary\" _class=\"secondary\">\n                    <ui-card-header>\n                        <h1>Javascript</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I have notable experience in dealing with both front-end and back-end applications\n                        made with javascript, including electron apps with node.js and security tools\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepositories('javascript')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n            <ui-slideshow-item>\n                <ui-card color=\"primary\" _class=\"primary\">\n                    <ui-card-header>\n                        <h1>Python</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I have made networking, security, utility software and alot more with python.Python is a language\n                        i have worked with for 2 years and i am very comfortable with\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepositories('python')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n            <ui-slideshow-item>\n                <ui-card color=\"secondary\" _class=\"secondary\">\n                    <ui-card-header>\n                        <h1>Perl</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I use perl mostly for networking software especially network security software,\n                        including firewalls,device discovery tools and network monitoring software\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepositories('perl')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n        </ui-slideshow>\n        <h4 class=\"uk-text-large\" style=\"text-align:center;margin-top:-100px;\">Projects</h4>\n        <div class=\"uk-child-width-1-4@l uk-grid-collapse uk-text-center\" uk-grid>\n            <div>\n                <div class=\"uk-tile primary\">\n                    <img src=\"" + _webjs2.default + "\" style=\"width:100px;height:100px\"></img>\n                    <p style=\"color:white\">wjs-cli</p>\n                    <p>wjs-cli is a command line tool that helps you create android and webapps by\n                        using modern javascript,html and css allowing you to deploy apps with\n                        the same code base to different devices</p>\n                    <ui-button text=\"github\" color=\"secondary\" @click=\"this.$methods.openGithubRepo('webjs')\"></ui-button>\n                </div>\n            </div>\n            <div>\n                <div class=\"uk-tile secondary\">\n                    <i class=\"fa fa-github fa-5x\" style=\"width:100px;height:100px;color:white;\"></i>\n                    <p style=\"color:white\">Gophish</p>\n                    <p>Gophish is a command line program that helps you get a target device's information\n                    via a tainted link. Information returned is saved in yaml file for easy integration in other\n                    workflows</p>\n                    <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepo('gophish')\"></ui-button>\n                </div>\n            </div>\n            <div>\n                <div class=\"uk-tile primary\">\n                    <i class=\"fa fa-github fa-5x\" style=\"width:100px;height:100px;color:white;\"></i>\n                    <p style=\"color:white\">Arp tools</p>\n                    <p>Arp tools is a suit of programs for network security. This includes ArpHound.pl\n                    which performs device discovery an DoS attacks and ArpAntispoof.pl that detects network attackers</p>\n                    <ui-button text=\"github\" color=\"secondary\" @click=\"this.$methods.openGithubRepo('arp-tools')\"></ui-button>\n                 </div>\n            </div>\n            <div>\n                <div class=\"uk-tile secondary\">\n                    <i class=\"fa fa-github fa-5x\" style=\"width:100px;height:100px;color:white;\"></i>\n                    <p style=\"color:white\">Gecko</p>\n                    <p>Gecko is a programming language in the works that aims at being higly adaptable and object oriented\n                    by using not only Gecko bytecode but .dll, .dylib and .so binaries</p>\n                    <ui-button text=\"coming soon\" color=\"primary\"></ui-button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-margin-large\">\n            <div class=\"uk-tile\" style=\"text-align:center;background:transparent;\">\n                <ui-grid _class=\"uk-child-width-1-3@m uk-grid-small\">\n                    <ui-grid-item uk-tooltip=\"E-MAIL\">\n                        <i class=\"fa fa-at fa-5x\" style=\"width:100px;height:100px;color:white;\"\n                        onclick=\"window.location.replace('mailto:neutrino2211@gmail.com')\"></i>\n                    </ui-grid-item>\n                    <ui-grid-item uk-tooltip=\"TWITTER\">\n                        <i class=\"fa fa-twitter fa-5x\" style=\"width:100px;height:100px;color:white;\"\n                        onclick=\"window.open('https://twitter.com/neutrino2211')\"></i>\n                    </ui-grid-item>\n                    <ui-grid-item uk-tooltip=\"INSTAGRAM\">\n                        <i class=\"fa fa-instagram fa-5x\" style=\"width:100px;height:100px;color:white;\"\n                        onclick=\"window.open('https://instagram.com/neutrino2211_')\"></i>\n                    </ui-grid-item>\n                </ui-grid>\n            </div>\n        </div>\n        ";
+        root.innerHTML = "\n        <div class=\"uk-tile main-2\" style=\"text-align:center;\">\n            <img src=\"" + _mypic2.default + "\" class=\"uk-border-circle\" style=\"width:100px;height:100px\"></img>\n            <h3 class=\"uk-text-large\">Hi There, My Name Is Tsowa Mainasara Al-amin</h3>\n            <p>I am a cyber security student with a passion for system and network applications.</p>\n            <p>I have made security software, both offensive and defensive. Also i have created other utility software</p>\n        </div>\n        <h4 class=\"uk-text-large\" style=\"text-align:center;\">Languages</h4>\n        <ui-slideshow>\n            <ui-slideshow-item>\n                <ui-card color=\"primary\" _class=\"primary\">\n                    <ui-card-header>\n                        <h1>Golang</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I have used golang to create security tools, back-end services and a new project coming soon\n                        is a new programming language of which it's compiler is made with golang\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" id=\"btn\" color=\"secondary\" @click=\"this.$methods.openGithubRepositories('go')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n            <ui-slideshow-item>\n                <ui-card color=\"secondary\" _class=\"secondary\">\n                    <ui-card-header>\n                        <h1>Javascript</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I have notable experience in dealing with both front-end and back-end applications\n                        made with javascript, including electron apps with node.js and security tools\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepositories('javascript')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n            <ui-slideshow-item>\n                <ui-card color=\"primary\" _class=\"primary\">\n                    <ui-card-header>\n                        <h1>Python</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I have made networking, security, utility software and alot more with python.Python is a language\n                        i have worked with for 2 years and i am very comfortable with\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepositories('python')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n            <ui-slideshow-item>\n                <ui-card color=\"secondary\" _class=\"secondary\">\n                    <ui-card-header>\n                        <h1>Perl</h1>\n                    </ui-card-header>\n                    <ui-card-body>\n                        <p>\n                        I use perl mostly for networking software especially network security software,\n                        including firewalls,device discovery tools and network monitoring software\n                        </p>\n                    </ui-card-body>\n                    <ui-card-footer>\n                        <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepositories('perl')\"></ui-button>\n                    </ui-card-footer>\n                </ui-card>\n            </ui-slideshow-item>\n        </ui-slideshow>\n        <h4 class=\"uk-text-large\" style=\"text-align:center;margin-top:-100px;\">Projects</h4>\n        <div class=\"uk-child-width-1-4@l uk-grid-collapse uk-text-center\" uk-grid>\n            <div>\n                <div class=\"uk-tile primary\">\n                    <img src=\"" + _webjs2.default + "\" style=\"width:100px;height:100px\"></img>\n                    <p style=\"color:white\">wjs-cli</p>\n                    <p>wjs-cli is a command line tool that helps you create android and webapps by\n                        using modern javascript,html and css allowing you to deploy apps with\n                        the same code base to different devices</p>\n                    <ui-button text=\"github\" color=\"secondary\" @click=\"this.$methods.openGithubRepo('webjs')\"></ui-button>\n                </div>\n            </div>\n            <div>\n                <div class=\"uk-tile secondary\">\n                    <i class=\"fa fa-github fa-5x\" style=\"width:100px;height:100px;color:white;\"></i>\n                    <p style=\"color:white\">Gophish</p>\n                    <p>Gophish is a command line program that helps you get a target device's information\n                    via a tainted link. Information returned is saved in yaml file for easy integration in other\n                    workflows</p>\n                    <ui-button text=\"github\" color=\"primary\" @click=\"this.$methods.openGithubRepo('gophish')\"></ui-button>\n                </div>\n            </div>\n            <div>\n                <div class=\"uk-tile primary\">\n                    <i class=\"fa fa-github fa-5x\" style=\"width:100px;height:100px;color:white;\"></i>\n                    <p style=\"color:white\">Arp tools</p>\n                    <p>Arp tools is a suit of programs for network security. This includes ArpHound.pl\n                    which performs device discovery an DoS attacks and ArpAntispoof.pl that detects network attackers</p>\n                    <ui-button text=\"github\" color=\"secondary\" @click=\"this.$methods.openGithubRepo('arp-tools')\"></ui-button>\n                 </div>\n            </div>\n            <div>\n                <div class=\"uk-tile secondary\">\n                    <i class=\"fa fa-github fa-5x\" style=\"width:100px;height:100px;color:white;\"></i>\n                    <p style=\"color:white\">Gecko</p>\n                    <p>Gecko is a programming language in the works that aims at being higly adaptable and object oriented\n                    by using not only Gecko bytecode but .dll, .dylib and .so binaries</p>\n                    <ui-button text=\"coming soon\" color=\"primary\"></ui-button>\n                </div>\n            </div>\n        </div>\n        <div class=\"uk-margin-large\">\n            <div class=\"uk-tile\" style=\"text-align:center;background:transparent;\">\n                <ui-grid _class=\"uk-child-width-1-3@m uk-grid-small\">\n                    <ui-grid-item uk-tooltip=\"E-MAIL\">\n                        <i class=\"fa fa-at fa-5x\" style=\"width:100px;height:100px;color:white;\"\n                        onclick=\"window.location.replace('mailto:neutrino2211@gmail.com')\"></i>\n                    </ui-grid-item>\n                    <ui-grid-item uk-tooltip=\"TWITTER\">\n                        <i class=\"fa fa-twitter fa-5x\" style=\"width:100px;height:100px;color:white;\"\n                        onclick=\"window.open('https://twitter.com/neutrino2211')\"></i>\n                    </ui-grid-item>\n                    <ui-grid-item uk-tooltip=\"INSTAGRAM\">\n                        <i class=\"fa fa-instagram fa-5x\" style=\"width:100px;height:100px;color:white;\"\n                        onclick=\"window.open('https://instagram.com/neutrino2211_')\"></i>\n                    </ui-grid-item>\n                </ui-grid>\n            </div>\n        </div>\n        ";
     }
 
     _createClass(Home, [{
@@ -13284,13 +13284,12 @@ var Home = exports.Home = function () {
             grid.init();
             margin.init();
             slideshow.init();
-            var e = document.getElementById("btn");
         }
     }]);
 
     return Home;
 }();
-},{"../../components/button":55,"../../components/card":56,"../../components/grid":57,"../../components/margin":58,"../../components/slideshow":59,"../../assets/mypic.jpg":53,"../../assets/webjs.png":54}],34:[function(require,module,exports) {
+},{"../../components/button":56,"../../components/card":57,"../../components/grid":58,"../../components/margin":59,"../../components/slideshow":60,"../../assets/mypic.jpg":54,"../../assets/webjs.png":55}],35:[function(require,module,exports) {
 "use strict";
 
 require("./css/uikit.css");
@@ -13334,7 +13333,7 @@ var router = new _router.Router(document.getElementById("js-main"));
 router.add("/", _home.Home);
 // router.add("/cool",WJS);
 router.start();
-},{"./css/uikit.css":36,"./css/uikit-rtl.css":37,"./style.css":35,"font-awesome/css/font-awesome.css":40,"uikit":41,"uikit/dist/js/uikit-icons":42,"./shim":38,"./router":39,"./views/home":51}],64:[function(require,module,exports) {
+},{"./css/uikit.css":37,"./css/uikit-rtl.css":38,"./style.css":36,"font-awesome/css/font-awesome.css":41,"uikit":42,"uikit/dist/js/uikit-icons":43,"./shim":39,"./router":40,"./views/home":52}],65:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -13363,7 +13362,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = undefined || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '37785' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '5474' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -13504,5 +13503,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[64,34], null)
+},{}]},{},[65,35], null)
 //# sourceMappingURL=/src.13fbf4c4.map
