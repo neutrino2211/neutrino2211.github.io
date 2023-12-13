@@ -8,7 +8,28 @@ export type Project = {
   description: string;
 };
 
-const projects: Project[] = [
+export const works: Project[] = [
+  {
+    title: "Catlog",
+    tech: {
+      name: "Nest.js",
+      image: "/nestjs.svg"
+    },
+    link: "https://catlog.shop",
+    description: "Catlog helps businesses take orders via chat, manage their businesses & get paid easily."
+  },
+  {
+    title: "Melon",
+    tech: {
+      name: "Typescript",
+      image: "/typescript-2.svg"
+    },
+    link: "https://usemelon.co",
+    description: "Crunch Numbers💰, Not Cravings! Swap airtime for cash, pay bills, send cash & more."
+  }
+];
+
+export const projects: Project[] = [
   {
     title: "Scryer",
     tech: {
@@ -37,5 +58,3 @@ const projects: Project[] = [
     description: "A decentralised P2P database format designed with an emphasis on ownership and anonymity."
   },
 ];
-
-export default projects;
