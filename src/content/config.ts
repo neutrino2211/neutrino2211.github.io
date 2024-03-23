@@ -16,4 +16,15 @@ const postsCollection = defineCollection({
   }),
 });
 
-export const collections = { posts: postsCollection };
+const publicSpeakingCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    speech: z.string(),
+    event: z.string(),
+    date: z.date(),
+    image: z.string(),
+    description: z.string()
+  })
+})
+
+export const collections = { posts: postsCollection, public_speaking: publicSpeakingCollection };

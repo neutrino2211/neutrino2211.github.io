@@ -1,0 +1,47 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import formatDate from "@/utils/formatDate";
+
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+  const talks = await getCollection("public_speaking");
+
+  return talks.map((talk) => ({
+    params: { slug: talk.slug },
+    props: { talk },
+  }));
+}
+
+type Props = {
+  talk: CollectionEntry<"public_speaking">;
+};
+
+const { talk } = Astro.props;
+const { Content } = await talk.render();
+---
+
+<Layout title={talk.data.title} description={talk.data.description}>
+  <main class="talk mx-auto flex w-full flex-col gap-4">
+    <header role="presentation">
+      {
+        talk.data.image != "none" ? <div class="w-full" style={`background-image: url(${talk.data.image}); height: 200px; background-size: cover; background-position: center; background-repeat: no-repeat;`}>
+          </div>
+          : null
+      }
+      <br>
+      <h1 class="text-3xl text-neutral-100">
+        {talk.data.speech}
+      </h1>
+      <br>
+      <div class="grid grid-cols-8">
+        <p class="italic">{formatDate(new Date(talk.data.date))}</p>
+      </div>
+    </header>
+
+    <hr>
+
+    <Content />
+  </main>
+</Layout>

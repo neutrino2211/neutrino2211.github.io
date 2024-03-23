@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import PublicSpeaking from "@/components/PublicSpeaking.astro"
+import formatDate from "@/utils/formatDate";
+
+const publicSpeaking = (await getCollection("public_speaking")).sort(function (first, second) {
+  return new Date(second.data.date).getTime() - new Date(first.data.date).getTime();
+});
+---
+
+<Layout title="Mainasara's Public Speaking - All Talks">
+  <main class="flex flex-col gap-20">
+    <h1 class="text-2xl text-neutral-100">Talks</h1>
+
+    <article class="flex flex-col gap-4">
+      {
+        publicSpeaking.map((project) => <PublicSpeaking {...{slug: project.slug, ...project.data}} />)
+      }
+    </article>
+  </main>
+</Layout>

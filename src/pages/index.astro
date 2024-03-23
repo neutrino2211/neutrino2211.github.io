@@ -7,13 +7,19 @@ import SocialLinks from "@/components/SocialLinks.astro";
 import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
+import PublicSpeaking from "@/components/PublicSpeaking.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import {projects, works} from "@/data/projects";
+import type { Code } from "astro:components";
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return new Date(second.data.published_at).getTime() - new Date(first.data.published_at).getTime();
+});
+
+const publicSpeaking = (await getCollection("public_speaking")).sort(function (first, second) {
+  return new Date(second.data.date).getTime() - new Date(first.data.date).getTime();
 });
 ---
 
@@ -84,6 +90,22 @@ const posts = (await getCollection("posts")).sort(function (first, second) {
         {
           works.length !== 0 &&
             works.map((project) => <ProjectCard {...project} />)
+        }
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">
+          Public Speaking ({publicSpeaking.length})
+        </h3>
+      </header>
+      {publicSpeaking.length === 0 && <p>Oops, I must speak^^^^^</p>}
+
+      <section class="flex flex-col gap-4">
+        {
+          publicSpeaking.length !== 0 &&
+            publicSpeaking.map((project) => <PublicSpeaking {...{slug: project.slug, ...project.data}} />)
         }
       </section>
     </article>

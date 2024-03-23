@@ -1,0 +1,62 @@
+---
+import formatDate from "@/utils/formatDate";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import { Image } from "astro:assets";
+
+type Props = {
+  speech: string,
+  event: string,
+  date: Date,
+  image: string,
+  slug: string,
+  description: string
+}
+;
+
+const { speech, event, date, image, slug, description } = Astro.props;
+---
+
+<>
+  <a
+    class="group flex w-full cursor-pointer flex-col justify-between gap-2 rounded-md border border-neutral-700 p-4 transition-all duration-300 hover:-translate-y-2 hover:border-neutral-400 md:flex-row md:items-center"
+    href={"/speeches/" + slug}
+    target="_blank"
+    rel="noreferrer"
+  >
+    <div class="flex">
+      <Image 
+          src={image}
+          class="mx-auto align-center rounded-sm"
+          alt={speech}
+          width={"200"}
+          height={"200"}
+        />
+      <div class="grid grid-row-2 place-content-between w-full mx-5">
+        <h2 class="text-neutral-100 text-xl row-span-1">{speech}</h2>
+        <p>{description}</p>
+        <h4 class="text-green-500 text-md row-span-1">@ {event}</h4>
+        <h4 class="">{formatDate(date)}</h4>
+      </div>
+      <svg
+          width="28"
+          height="28"
+          viewBox="0 0 18 18"
+          fill="none"
+          class="transition-all duration-300 mx-auto group-hover:translate-x-1"
+        >
+          <path
+            d="M5.25 12.75L12.75 5.25"
+            stroke="#999999"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M5.25 5.25H12.75V12.75"
+            stroke="#999999"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+    </div>
+  </a>
+</>
