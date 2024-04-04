@@ -40,9 +40,9 @@ const { Content } = await post.render();
         {post.data.title}
       </h1>
       <br>
-      <div class="grid grid-cols-8">
+      <div class="grid grid-cols-8 w-full">
         <p class="italic col-span-6">{post.data.description}</p>
-        <p class="italic">{formatDate(new Date(post.data.published_at))}</p>
+        <p class="italic col-span-2 text-right">{formatDate(new Date(post.data.published_at))}</p>
       </div>
     </header>
 

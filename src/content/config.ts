@@ -11,8 +11,8 @@ const postsCollection = defineCollection({
     comments: z.number(),
     reactions: z.number(),
     views: z.number(),
-    cover_image: z.string(),
-    devto_link: z.string(),
+    cover_image: z.nullable(z.string()),
+    devto_link: z.nullable(z.string()),
   }),
 });
 
