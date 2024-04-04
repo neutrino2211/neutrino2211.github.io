@@ -12,7 +12,8 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import {projects, works} from "@/data/projects";
-import type { Code } from "astro:components";
+
+const description = `Mainasara is an experienced Web Developer adept in all stages of advanced web development, with a diverse journey from finance to education, social media, leadership as CTO at Catlog and now heading Research & Development at Cyberplural`;
 
 const posts = (await getCollection("posts")).sort(function (first, second) {
   return new Date(second.data.published_at).getTime() - new Date(first.data.published_at).getTime();
@@ -23,7 +24,7 @@ const publicSpeaking = (await getCollection("public_speaking")).sort(function (f
 });
 ---
 
-<Layout>
+<Layout title="Mainasara Tsowa - Backend Developer" description={description}>
   <main class="flex flex-col gap-20">
     <article
       class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"

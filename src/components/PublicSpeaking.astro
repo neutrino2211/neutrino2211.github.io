@@ -23,15 +23,15 @@ const { speech, event, date, image, slug, description } = Astro.props;
     target="_blank"
     rel="noreferrer"
   >
-    <div class="md:flex">
+    <div class="sm:flex">
       <Image 
           src={image}
-          class="mx-auto align-center rounded-sm"
+          class="mx-auto w-full mb-5 align-center rounded-sm sm:w-[200px] sm:my-auto"
           alt={speech}
           width={"200"}
           height={"200"}
         />
-      <div class="grid grid-row-2 place-content-between w-full mx-5">
+      <div class="grid grid-row-2 place-content-between w-full sm:mx-5 sm:mt-10">
         <h2 class="text-neutral-100 text-xl row-span-1">{speech}</h2>
         <p>{description}</p>
         <h4 class="text-green-500 text-md row-span-1">@ {event}</h4>

@@ -32,7 +32,7 @@ const presentation: Presentation = {
     },
     {
       label: "Resume",
-      link: "/Resume.docx"
+      link: "https://docs.google.com/document/d/1xkgsk4Ncag63HQnNj-dK1GDYSAVaZnPJ8N4gulwGssY/edit?usp=sharing"
     }
   ],
 };

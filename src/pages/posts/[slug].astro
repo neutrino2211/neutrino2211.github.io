@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
 import { Image } from "astro:assets";
+import SocialLinks from "@/components/SocialLinks.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -46,7 +47,10 @@ const { Content } = await post.render();
     </header>
 
     <hr>
-
     <Content />
+    <hr>
   </main>
+  <footer>
+    <SocialLinks />
+  </footer>
 </Layout>
