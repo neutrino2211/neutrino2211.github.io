@@ -23,7 +23,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout title={post.data.title} description={post.data.description}>
+<Layout title={post.data.title} description={post.data.description} og={(post.data.cover_image ? {image: post.data.cover_image!} : {})}>
   <main class="post mx-auto flex w-full flex-col gap-4">
     <header role="presentation">
       {
