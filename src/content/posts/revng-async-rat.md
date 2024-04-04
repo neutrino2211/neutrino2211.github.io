@@ -3,7 +3,7 @@ comments: 0
 reactions: 0
 views: 0
 published_at: 2024-04-04T20:44:51Z
-cover_image: none
+cover_image: /revng-async-rat/cover.jpg
 title: "Technical Analysis: Async Rat 👾"
 published: true
 description: "A technical analysis of the AsyncRat remote access trojan that rose in 2021 and has managed to stay relevant till now (Q1 2024)"

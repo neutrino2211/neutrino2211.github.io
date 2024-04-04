@@ -28,7 +28,7 @@ const { Content } = await post.render();
     <header role="presentation">
       {
         post.data.cover_image != "none" ? <Image 
-            src={post.data.cover_image}
+            src={post.data.cover_image!}
             class="w-full mx-auto align-center"
             alt="cover image"
             width='200'
@@ -36,7 +36,7 @@ const { Content } = await post.render();
           />
           : null
       }
-      <h1 class="text-3xl text-neutral-100">
+      <h1 class="text-3xl text-neutral-100 mt-4">
         {post.data.title}
       </h1>
       <br>
