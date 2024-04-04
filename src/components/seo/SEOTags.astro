@@ -35,8 +35,12 @@ const openGraph = {
         image: openGraph.image,
       },
       image: {
+        url: openGraph.image,
         alt: openGraph.alt,
       },
+      optional: {
+        description: openGraph.description || description || DEFAULT_DESCRIPTION_PAGE
+      }
     }}
     twitter={{
       creator: "@neutrino2211",
@@ -54,8 +58,8 @@ const openGraph = {
           content: openGraph.image,
         },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: openGraph.title },
-        { name: "twitter:description", content: openGraph.description },
+        { name: "twitter:title", content: openGraph.title || title || DEFAULT_TITLE_PAGE },
+        { name: "twitter:description", content: openGraph.description || description || DEFAULT_DESCRIPTION_PAGE },
         { name: "twitter:site", content: "@neutrino2211" },
       ],
     }}
