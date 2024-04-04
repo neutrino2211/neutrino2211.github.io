@@ -79,3 +79,7 @@ AsyncRAT contains multiple plugins that run multiple payloads, the way it is han
     
     **![Saved Plugin](https://lh7-us.googleusercontent.com/GFdl6E9UaEAj-KxfdFSRd-_7VDbG4SRKmLY_59wLL0Sk_Bl4AiYzvIRJtx2LT7Qc97AZSVGJZn7ZUTeiTe3b-5nRHWN4hGCCttaJHjPwdc7sQOgJ4_ABIFfxUOUwJRin38w3L0kHJP0s1WDcvsvmtcY)**
     ![Invoke Method](https://lh7-us.googleusercontent.com/ZgZzPz8wjd4OgdipDr_vaxRCIE1O9LzQp521wl2hFJag0LY5B2A4yiJ41dghStHaTeOQj6j01GQ0Lpyb34VvB4cTNY4EU-OXvq7-VsMeTdcb8CZLo4XKdyxL63uCvoryrfpIh6oOIuPJgpdOY6wDsqc)
+
+## The Report
+
+This analysis was done as part of a larger report (not yet published) I worked on with my colleagues at [Cyberplural](https://cyberplural.com) and contains more work from me and other talented personnel at the company.
