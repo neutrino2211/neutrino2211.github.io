@@ -31,6 +31,10 @@ const presentation: Presentation = {
       link: "https://github.com/neutrino2211",
     },
     {
+      label: "LinkedIn",
+      link: "https://www.linkedin.com/in/mainasara-tsowa-17098b214/"
+    },
+    {
       label: "Resume",
       link: "https://docs.google.com/document/d/1xkgsk4Ncag63HQnNj-dK1GDYSAVaZnPJ8N4gulwGssY/edit?usp=sharing"
     }

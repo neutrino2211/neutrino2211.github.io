@@ -82,4 +82,4 @@ AsyncRAT contains multiple plugins that run multiple payloads, the way it is han
 
 ## The Report
 
-This analysis was done as part of a larger report (not yet published) I worked on with my colleagues at [Cyberplural](https://cyberplural.com) and contains more work from me and other talented personnel at the company.
+This analysis was done as part of a [larger report](https://www.linkedin.com/feed/update/urn:li:activity:7181922494964973568/) I worked on with my colleagues at [Cyberplural](https://cyberplural.com) and contains more work from me and other talented personnel at the company.
