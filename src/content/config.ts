@@ -23,7 +23,8 @@ const publicSpeakingCollection = defineCollection({
     event: z.string(),
     date: z.date(),
     image: z.string(),
-    description: z.string()
+    description: z.string(),
+    title: z.string()
   })
 })
 
